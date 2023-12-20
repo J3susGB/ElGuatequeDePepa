@@ -16,6 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($to, $subject, $email_message);
 
     // Redirige o realiza otras acciones después de enviar el correo.
-    header('Location: gracias.html');
+    header('Location: index.html');
 }
 ?>

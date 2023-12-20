@@ -1837,18 +1837,20 @@ margin-top: 20px;
 @keyframes agrandar {
     0%{
         font-size: 19px;
+		font-weight: bold;
     }
 
     50%{
         font-size: 30px;
 		color: var(--principal);
 		font-weight: bold;
+		text-shadow: 1.5px 1.5px 1.5px var(--plata);
     }
 
-    100%{
+    /* 100%{
         font-size: 50px;
 		color: var(--principal);
-    }
+    } */
 }
 
 .title span .resaltado {
@@ -1857,9 +1859,6 @@ margin-top: 20px;
 	/* font-size: 30px !important;  */
 	/*--------------*/
     animation: agrandar 2s infinite step-end;
-
-	
-	
 }
 .black {
 	font-weight: 500;
@@ -1872,9 +1871,9 @@ margin-top: 20px;
 
 
 .choose_bg .white_bg  {
-	background: #fff;
+	background: var(--blanco);
 	padding: 40px 20px;
-	box-shadow: #ddd 0px 0px 10px 3px;
+	box-shadow: var(--negro) 0 0 10px 3px;
 	margin-bottom: 70px;
 	padding: 50px 80px;
 }
@@ -2483,3 +2482,27 @@ text-align: center;
     background-color: #f5f5f5;
     transform: scale(1.1);
   }
+
+  /*RESALTADO DE CONTENIDO DE LA CLASE RESALTADO*/
+@keyframes temblor {
+    0%{
+        bottom: 20px;
+    	/* right: 10px; */
+		
+    }
+
+    50%{
+        bottom: 21.9px;
+    	/* right: 40px; */
+		
+    }
+
+     /* 100%{
+        font-size: 50px;
+		
+    }  */
+}
+
+#whatsapp-icon {
+animation: temblor .3s infinite step-end;
+}
