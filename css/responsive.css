@@ -1,11 +1,20 @@
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
 
+:root {
+	--blanco: #FFF;
+	/* --principal: #4682B4; */
+	--principal: #F87C56;
+	--negro: #070500;
+	--plata: #C0C0C0;
+	--footer: #000009;
 
+	--letra: 'Montserrat', sans-serif;
+}
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .main-menu ul>li a {
-        padding: 20px 20px 20px;
+    .main-menu ul  {
+        margin-left: -18px;
     }
 
     .limit-box,
@@ -14,7 +23,7 @@
         display: flex;
         justify-content: flex-end;
         padding-right: 1%;
-        
+        margin: 0;
     }
     
     .menu-area-main li {
@@ -53,7 +62,10 @@
 /*------------------------------------------------------------------- 992px x 1249px ---------------------------------------------------------------------*/
 
 @media (min-width: 992px) and (max-width: 1249px) {
-    .main-menu ul>li a {
+    .main-menu ul  {
+        margin-left: -18px;
+    }
+    .main-menu ul li a {
         padding: 26px 20px 0 20px;
     }
     .full-slider_cont h1 {
@@ -138,6 +150,9 @@
 /*------------------------------------------------------------------- 1251px x 1500px ---------------------------------------------------------------------*/
 
 @media (min-width: 1251px) and (max-width: 1500px) {
+    .main-menu ul  {
+        width: 120%; /*Para mover la barra de navegación*/
+    }
     .banner-main .carousel-caption {
         background: transparent;
     }
@@ -148,6 +163,11 @@
 @media only screen and (min-width: 599px) and (max-width: 767px) {
     .logo {
         text-align: center;
+    }
+    .menu-area-main a:hover{
+        /* background-color: var(--principal) !important; */
+        color: var(--principal) !important;
+        font-weight: bold !important;
     }
     .cart-content-right {
         padding-bottom: 5px;
@@ -240,6 +260,11 @@
 /*------------------------------------------------------------------- %%%599px x 280px ---------------------------------------------------------------------*/
 
 @media only screen and (min-width: 280px) and (max-width: 599px) {
+    .menu-area-main a:hover{
+        /* background-color: var(--principal) !important; */
+        color: var(--principal) !important;
+        font-weight: bold !important;
+    }
     .cart-content-right {
         padding-bottom: 5px;
     }

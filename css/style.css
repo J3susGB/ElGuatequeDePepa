@@ -37,10 +37,13 @@
 ---------------------------------------------------------------------*/
 :root {
 	--blanco: #FFF;
-	--principal: #4682B4;
+	/* --principal: #4682B4; */
+	--principal: #F87C56;
 	--negro: #070500;
 	--plata: #C0C0C0;
 	--footer: #000009;
+
+	--letra: 'Montserrat', sans-serif;
 }
 * {
 	box-sizing: border-box !important;
@@ -54,7 +57,7 @@ body {
 	/* background-image: url("../images/fondobg.png"); */
 	color: #666666;
 	font-size: 14px;
-	font-family: 'poppins', sans-serif;
+	font-family: var(--letra);
 	line-height: 1.80857;
 	font-weight: normal;
 	overflow-x: hidden;
@@ -83,7 +86,7 @@ h6 {
 	padding: 0 0 10px 0;
 	font-weight: normal;
 	line-height: normal;
-	color: #111111;
+	color: var(--blanco);
 	margin: 0
 }
 
@@ -488,8 +491,10 @@ nav.main-menu {
 .menu-area-main li:focus a {
 	color: var(--principal);
 } 
-.menu-area-main li a {
-	
+.limit-box {
+	display: flex;
+	justify-content: right;
+	margin: 0 -15px;
 }
 .menu-area-main li:hover a {
 	background-color: var(--principal);
@@ -608,7 +613,7 @@ nav.main-menu {
 }
 
 .top-menu-left li a:hover {
-	color: #38c8a8;
+	color: var(--principal);
 }
 
 .right-dropdown-language {
@@ -666,7 +671,7 @@ nav.main-menu {
 }
 
 .dropdown-bar .dropdown-link li a:hover {
-	color: #38c8a8;
+	color: var(--principal);
 }
 
 .dropdown-bar .dropdown-link li a img {
@@ -2504,5 +2509,5 @@ text-align: center;
 }
 
 #whatsapp-icon {
-animation: temblor .3s infinite step-end;
+animation: temblor .3s 4 step-end;
 }
