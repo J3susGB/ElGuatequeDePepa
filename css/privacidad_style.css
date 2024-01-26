@@ -1,0 +1,44 @@
+/*PRIVACIDAD*/
+
+.privacidad__quienes-somos {
+    margin-top: -80rem;
+}
+
+.privacidad__caja__texto {
+    height: auto;
+}
+
+.responsive__span,
+.responsive__strong {
+    display: block;
+    text-transform: uppercase;
+}
+
+.responsive__strong {
+    font-weight: bold;
+}
+
+.responsive__parrafo {
+    font-size: 1.8rem !important;
+}
+
+.privacidad {
+    margin-bottom: 0rem;
+}
+
+/*AVISO LEGAL*/
+
+.legal__quienes-somos {
+   position: absolute;
+   margin-top: 115rem;
+}
+
+.legal__caja {
+    margin-top: 131rem;
+}
+
+/*FOOTER*/
+
+.privacidad__footer {
+    top: 615rem;
+}

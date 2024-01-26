@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /private/
+Disallow: /secret-page.html
+Sitemap: https://www.elguatequedepepa.com/sitemap.xml

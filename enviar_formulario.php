@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['Message'];
 
     $to = 'hola@elguatequedepepa.com';
-    $subject = 'Nuevo formulario de contacto';
+    $subject = 'NUEVO FORMULARIO DEL GUATEQUE DE PEPA';
 
     $email_message = "Nombre: $name\n";
     $email_message .= "Email: $email\n";
