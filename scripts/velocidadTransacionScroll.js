@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         if (targetElement) {
           var offsetTop = targetElement.offsetTop;
-          var duration = 2500; // Puedes ajustar la duración según tu preferencia
+          var duration = 1250; // Puedes ajustar la duración según tu preferencia
           var startTime;
           var startTop = window.scrollY || window.pageYOffset;
   

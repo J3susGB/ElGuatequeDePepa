@@ -1,11 +1,13 @@
 /************************************************ PANTALLA HASTA 598PX ************************************************
 *************************************************** (MÓVILES NORMALES) *************************************************/
 
-@media (max-width: 1023px) {
+/*Pantalla hasta 374px______________________________________________________________________________________________*/
+
+@media (min-width: 350px) {
     /*PRIVACIDAD*/
 
     .privacidad__quienes-somos {
-        margin-top: -81rem;
+        margin-top: 18rem;
         margin-bottom: -3.5rem;
     }
 
@@ -31,17 +33,144 @@
     /*AVISO LEGAL*/
 
     .legal__quienes-somos {
-        margin-top: 543rem;
+        margin-top: 673rem !important;
+        margin-bottom: 0;
     }
     
     .legal__caja {
-        margin-top: 549rem;
+        margin-top: -2rem;
+    }
+
+    .responsive__strong {
+        display: block !important;
     }
 
     /*FOOTER*/
 
     .privacidad__footer {
-        top: 1465rem;
+        top: 1505rem !important;
+    }
+}
+
+/*Pantalla 375px______________________________________________________________________________________________*/
+
+@media (min-width: 375px) {
+
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 617rem !important;
+    }
+
+    .legal__caja {
+        margin-bottom: 5rem !important;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+       margin-top: -92rem;
+    }
+}
+
+/*Pantalla 384px______________________________________________________________________________________________*/
+
+@media (min-width: 384px) {
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 595rem !important;
+    }
+
+    .legal__caja {
+        margin-bottom: 0 !important;
+    } 
+
+    /*FOOTER*/
+
+    .footer {
+        margin-top: -130rem;
+     }
+}
+
+/*Pantalla 390px______________________________________________________________________________________________*/
+
+@media (min-width: 390px) {
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 613rem !important;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        margin-top: -125rem;
+     }
+}
+
+/*Pantalla 393px______________________________________________________________________________________________*/
+
+@media (min-width: 393px) {
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 603rem !important;
+    }
+
+    /*FOOTER*/
+
+    .privacidad__footer {
+        top: 1480rem !important;
+    }
+}
+
+/*Pantalla 412px a 427px______________________________________________________________________________________*/
+
+@media (min-width: 412px) {
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 545rem !important;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        margin-top: -217rem;
+     }
+}
+
+/*Pantalla 428px a 479px______________________________________________________________________________________*/
+
+@media (min-width: 428px) {
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 470rem;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        margin-top: -253rem !important;
+     }
+}
+
+/*Pantalla 480px______________________________________________________________________________________________*/
+
+
+@media (min-width: 480px) {
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 480rem !important;
+    }
+
+    /*FOOTER*/
+
+    .privacidad__footer {
+        top: 1345rem !important;
     }
 }
 
@@ -49,8 +178,9 @@
 /************************************************ PANTALLA DE 599PX A 767PX ************************************************
 ***************************************************** (TABLETS PEQUEÑAS) ***************************************************/
 
+/*Pantalla 600px______________________________________________________________________________________________*/
 
-@media (min-width: 600px) and (max-width: 649px) {
+@media (min-width: 600px) {
 
     /*PRIVACIDAD*/
 
@@ -62,138 +192,227 @@
     /*AVISO LEGAL*/
 
     .legal__quienes-somos {
-        margin-top: 306rem;
+        margin-top: 445rem !important;
     }
 
     .legal__caja {
-        margin-top: 314rem;
+        margin-top: 0rem;
     }
 
     /*FOOTER*/
 
     .privacidad__footer {
-        top: 1027rem;
+        top: 1340rem !important;
     }
 }
 
-@media (min-width: 650px) and (max-width: 767px) {
+/*Pantalla 640px______________________________________________________________________________________________*/
+
+@media (min-width: 640px) {
 
     /*AVISO LEGAL*/
 
     .legal__quienes-somos {
-        margin-top: 170rem;
-    }
-
-    .legal__caja {
-        margin-top: 179rem;
+        margin-top: 357rem;
     }
 
     /*FOOTER*/
 
     .privacidad__footer {
-        top: 805rem;
+        top: 945rem;
+    }
+}
+
+
+/*Pantalla 641px______________________________________________________________________________________________*/
+
+@media (min-width: 641px) {
+
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 355rem !important;
+    }
+
+    /*FOOTER*/
+
+    .privacidad__footer {
+        top: 1145rem !important;
     }
 }
 
 /************************************************ PANTALLA DE 769PX A 949PX ************************************************
 ********************************************************** (TABLETS) ********************************************************/
 
+/*Pantalla 768px______________________________________________________________________________________________*/
 
-@media (min-width: 768px) and (max-width: 799px) {
+@media (min-width: 768px) {
 
     /*AVISO LEGAL*/
 
     .legal__quienes-somos {
-        margin-top: 153rem;
-    }
-
-    .legal__caja {
-        margin-top: 162rem;
+        margin-top: 330rem !important;
     }
 
     /*FOOTER*/
 
     .privacidad__footer {
-        top: 750rem;
+        top: 1100rem !important;
     }
 }
 
-@media (min-width: 800px) and (max-width: 899px) {
+/*Pantalla 800px______________________________________________________________________________________________*/
 
-    /*AVISO LEGAL*/
+
+@media (min-width: 800px) {
 
     .legal__quienes-somos {
-        margin-top: 142rem;
-    }
-
-    .legal__caja {
-        margin-top: 151rem;
+        margin-top: 280rem;
     }
 
     /*FOOTER*/
 
     .privacidad__footer {
-        top: 715rem;
+        top: 755rem;
     }    
 }
 
-@media (min-width: 900px) and (max-width: 950px) {
+/*Pantalla 820px______________________________________________________________________________________________*/
+
+@media (min-width: 820px) {
+
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 305rem !important;
+    }
+
+    /*FOOTER*/
+
+    .privacidad__footer {
+        top: 1045rem !important;
+    }     
+}
+
+/*Pantalla 900px______________________________________________________________________________________________*/
+
+@media (min-width: 900px) {
+
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 251rem;
+    }
+
+    /*FOOTER*/
+
+    .privacidad__footer {
+        top: 690rem;
+    }    
+}  
+
+/*Pantalla 912px______________________________________________________________________________________________*/
+
+@media (min-width: 912px) {
+
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 245rem;
+    }
+
+    /*FOOTER*/
+
+    .privacidad__footer {
+        top: 680rem;
+    }    
+}
+
+/*Pantalla 950px______________________________________________________________________________________________*/
+
+@media (min-width: 950px) {
+
+    /*HEADER*/
+
+    /* .enlaces__responsive--privacidad {
+        margin-left: 30rem;
+    } */
 
     /*PRIVACIDAD*/
 
-    .privacidad__quienes-somos {
-        margin-top: -80rem;
-        margin-bottom: -2.7rem;
-    }
-
     /*AVISO LEGAL*/
 
     .legal__quienes-somos {
-        margin-top: 125rem;
+        margin-top: 300rem;
     }
 
-    .legal__caja {
-        margin-top: 135rem;
-    }
 
     /*FOOTER*/
 
     .privacidad__footer {
-        top: 662rem;
+        top: 780rem;
     }    
 }
 
-/************************************************ PANTALLA DE 950px A 1279px ***********************************************
+
+/************************************************ PANTALLA DE 1000px A 1279px ***********************************************
 **************************************************** (LAPTOS Y PORTÁTILES) **************************************************/
 
-@media (min-width: 951px) and (max-width: 1279px) {
+@media (min-width: 1000px) {
 
     /*PRIVACIDAD*/
 
     .privacidad__quienes-somos {
-        margin-top: -86rem;
+        margin-top: -60rem;
         margin-bottom: -1.5rem;
     }
 
     /*AVISO LEGAL*/
 
     .legal__quienes-somos {
-        margin-top: 284rem;
+        margin-top: 400rem !important;
     }
 
     .legal__caja {
-        margin-top: 299rem;
+        margin-top: -7.5rem;
     }
 
     /*FOOTER*/
 
     .privacidad__footer {
-        top: 1070rem;
+        top: 1275rem !important;
     } 
     
 }
 
+/************************************************ PANTALLA MÁS DE 1280px ***********************************************
+**************************************************** (monitor) **************************************************/
 
+@media (min-width: 1280px) {
+    
+    /*PRIVACIDAD*/
 
+    .privacidad__quienes-somos {
+        margin-top: -60rem !important;
+        margin-bottom: 0rem;
+    }
+
+    /*AVISO LEGAL*/
+
+    .legal__quienes-somos {
+        margin-top: 227rem !important;
+    }
+
+    .legal__caja {
+        margin-top: -7.5rem;
+    }
+
+    /*FOOTER*/
+
+    .privacidad__footer {
+        top: 877rem !important;
+    } 
+
+}
 
 
