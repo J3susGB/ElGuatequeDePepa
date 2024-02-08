@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validación de correo electrónico
     if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Correo electrónico no válido
-        echo '<script>alert("Correo electrónico no válido. Por favor, ingrese un correo válido."); history.back();</script>';
+        header('Location: error.html');
         exit();
     }
 
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Verificar que haya al menos un punto después del símbolo "@"
     if (empty($user) || empty($domain) || substr_count($domain, '.') < 1) {
-        echo '<script>alert("Correo electrónico no válido. Por favor, ingrese un correo válido."); history.back();</script>';
+        header('Location: error.html');
         exit();
     }
 
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Verificar que haya al menos dos letras después del punto
     if (empty($subdomain) || empty($tld) || strlen($tld) < 2) {
-        echo '<script>alert("Correo electrónico no válido. Por favor, ingrese un correo válido."); history.back();</script>';
+        header('Location: error.html');
         exit();
     }
 
@@ -64,13 +64,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email_message = "Nombre: $name\n";
     $email_message .= "Email: $email\n";
-    $email_message .= !empty($phone) ? "Teléfono: $phone\n" : "Teléfono: No proporcionado\n";
+    $email_message .= !empty($phone) ? "Telefono: $phone\n" : "Telefono: No proporcionado\n";
     $email_message .= "Mensaje:\n$message";
 
     mail($to, $subject, $email_message);
 
-    // Redirige o realiza otras acciones después de enviar el correo.
-    header('Location: index.html');
+    // Redirigir a la página de inicio con un parámetro que indique que se debe mostrar el mensaje de agradecimiento
+    header('Location: index.html?thankyou=true');
+    exit(); // Asegura que el código se detenga aquí para evitar cualquier salida adicional
 }
 ?>
-

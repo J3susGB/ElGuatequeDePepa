@@ -579,6 +579,11 @@
 		font-size: 1.5rem;
 	}
 
+	.swiper-button-prev,
+	.swiper-button-next {
+    display: none !important;
+	}
+
 	.galeria__fotos {
 		display: flex;
 		flex-direction: column;
@@ -669,7 +674,7 @@
 	******************************************************************/
 
 	#quienes-somos {
-		margin-top: 144rem;
+		margin-top: 155rem;
 		margin-bottom: 1rem;
 	}
 
@@ -1891,6 +1896,22 @@
 		width: 75rem !important;
 	}
 
+	.swiper-button-prev,
+	.swiper-button-next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4rem;
+    height: 4rem;
+    color: #FAB08E !important;
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 4rem;
+    cursor: pointer;
+    z-index: 10; /* Asegura que los botones estén por encima de los slides */
+}
+
 	.galeria__fotos {
 		display: flex;
 		flex-direction: column;
@@ -2408,29 +2429,6 @@
 		width: 118rem !important;
 	}
 
-	/* .galeria__fotos {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		margin-left: 3.77rem;
-		margin-top: 77rem;
-		margin-bottom: 13rem;
-	}
-
-	.galeria__fotos--foto {
-		column-gap: 0 !important;
-	}
-
-	.galeria__fotos--foto img {
-		width: 77rem !important;
-		height: 45.9rem;
-		padding: .5rem;
-	}
-
-	.galeria__fotos--foto img:hover {
-		transform: scale(0.97);
-		
-	} */
-
 	.galeria__fotos {
 		display: flex;
 		flex-direction: column;
@@ -2440,7 +2438,7 @@
 	}
 
 	.swiper{
-		margin-top: 73rem;
+		margin-top: 80rem;
 		width: 85%;
 		
 	}

@@ -10,5 +10,9 @@ var swiper = new Swiper(".mySwiper", {
         slidesShadows: true,
         rotate: 0,
         stretch: 0
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     }
 });
