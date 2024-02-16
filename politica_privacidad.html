@@ -3,21 +3,24 @@
 <head>
     <!-- basic -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
     <!-- site metas -->
-    <title>El Guateque de Pepa: Política de Privacidad y tratamiento de datos</title>
+    <title>El Guateque de Pepa: Servicio de videomatón, música y animación para bodas, eventos y cumpleaños</title>
     <meta name="keywords" content="videomatón, Sevilla, Cubo, Guateque, cabina, bodas, fiestas, despedidas, comidas de empresa, divertido, divertida, original, video, vídeo, foto, QR, qr">
-    <meta name="description" content="Videomatón en Sevilla: Cubo Guateque y cabinas para bodas, fiestas, despedidas y comidas de empresa. Descubre nuestros servicios para eventos.">
+    <meta name="description" content="El Guateque de Pepa: Servicio de videomatón, música y animación para bodas, eventos y cumpleaños. Descubre nuestra cabina hinchable iluminada con luces led, vídeos en 4K, sonido profesional y llévate tu vídeo o foto al instante.
+    Ideal para bodas, despedidas, cumpleaños, comidas de empresa, comuniones y todo tipo de fiestas y eventos">
     <meta name="author" content="Jesús Gómez Beltrán">
-    <link rel="icon" href="images/logo2.jpg" type="image/jpg"> <!--Icono de la pestaña del navegador-->
+    <meta name="theme-color" content="#F87C56">
+    <link rel="icon" href="multimedia/images/logo2.jpg" type="image/jpg"> <!--Icono de la pestaña del navegador-->
 
-    <!-- style css -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Preload del archivo CSS minificado -->
+    <link rel="preload" href="css/style_minificado.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style_minificado.css"></noscript>
+
+    <!-- Enlace al archivo CSS minificado y al archivo normalize -->
+    <link rel="stylesheet" href="css/normalize_minificado.css">
+    <link rel="stylesheet" href="css/style_minificado.css">
 
     <!--Tipo de letra-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
@@ -26,6 +29,9 @@
     <link rel="icon" href="images/fevicon.png" type="image/gif">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+    
+    <!--Manifiesto-->
+    <link rel="manifest" href="/manifest.json">
     
 </head>
 
@@ -37,46 +43,46 @@
         <div id="top" class="header">
             <div class="header__top">
                 <div class="header__top--texto">
-                    <h6 id="tel" >¿Hablamos? <a href="tel:604994694">604994694</a> | <span id="emailSpan">hola@elguatequedepepa.com</span></h6>
+                    <p id="tel" >¿Hablamos? <a href="tel:604994694">604994694</a> | <span id="emailSpan">hola@elguatequedepepa.com</span></p>
                 </div>
                 <div class="header__top--enlaces">
-                
-                        <a id="i" href="https://www.instagram.com/elguatequedepepa/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path
-                            d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                            <path d="M16.5 7.5l0 .01" />
-                        </svg>
-                        </a>
-                        
-                        <a id="f" href="https://www.facebook.com/profile.php?id=61550691195642" target="=_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" viewBox="0 0 24 24" stroke-width="1.5"  fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                            </svg>
-                        </a>
                     
-                        <a id="w" href="https://api.whatsapp.com/send?phone=604994694" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44"
-                            viewBox="0 0 24 24" stroke-width="1.5" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                            <path
-                            d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                    <a id="i" href="https://www.instagram.com/elguatequedepepa/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="  target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                        d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                    </a>
+                    
+                    <a id="f" href="https://www.facebook.com/profile.php?id=61550691195642" target="=_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" viewBox="0 0 24 24" stroke-width="1.5"  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                         </svg>
-                        </a>
-                </div> <!--cierre .header__top-enlaces-->
+                    </a>
+                
+                    <a id="w" href="https://api.whatsapp.com/send?phone=604994694" target="_blank" aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44"
+                        viewBox="0 0 24 24" stroke-width="1.5" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                        <path
+                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                    </svg>
+                    </a>
+            </div> <!--cierre .header__top-enlaces-->
 
                 <div class="header__main">
                     <div class="header__main--logo"> 
-                        <a href="index.html#vueltaInicio"><img src="multimedia/images/logo.jpg" alt="logo"></a> 
+                        <a href="index.html#vueltaInicio"><img src="multimedia/images/logo.jpg" alt="logo" loading="lazy"></a> 
                     </div>
                     <div class="header__main--navegacion">
                         <div class="menu-toggle">
@@ -86,7 +92,7 @@
                         </div>
                         <nav class="menu-responsive">
                             <ul>
-                                <li> <a href="index.html#vueltaInicio">Página principal</a> </li>
+                                <li> <a href="index.html#vueltaInicio">Inicio</a> </li>
                                 <li> <a href="#paginaPrivacidad" >Política privacidad</a> </li>
                                 <li> <a href="#paginaLegal" >Base legal</a> </li>
                                 <li> <a href="index.html#paginaContacto">Contacto</a> </li>
@@ -381,7 +387,7 @@
         <ul class="footer__logos">
             <li>
                 <a href="https://www.instagram.com/elguatequedepepa/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
-                    target="_blank">
+                    target="_blank" aria-label="Instagram">
                     <svg xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
@@ -396,7 +402,7 @@
             </li>
             <li>
                 <a id="footer_facebook" href="https://www.facebook.com/profile.php?id=61550691195642"
-                    target="_blank">
+                    target="_blank" aria-label="Facebook">
                     <svg xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-brand-facebook-filled" width="44" height="44"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
@@ -409,7 +415,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://wa.me/604994694" target="_blank">
+                <a href="https://wa.me/604994694" target="_blank" aria-label="WhatsApp" >
                     <svg xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
@@ -422,7 +428,7 @@
                 </a>
             </li>
             <li>
-                <a href="mailto:hola@elguatequedepepa.com?subject=Asunto%20OBLIGATORIO" target="_blank">
+                <a href="mailto:hola@elguatequedepepa.com?subject=Asunto%20OBLIGATORIO" target="_blank" aria-label="Email">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-filled"
                     width="44" height="44" viewBox="0 0 24 24" stroke-width="2.5" stroke="#9e9e9e"
                     fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -440,7 +446,7 @@
 
         <div class="footer__bottom">
             <div class="footer__bottom--texto">
-                <h4>Copyright - Todos los Derechos Reservados Por <a href="https://jesusgomezfreelancer.netlify.app/" target="_blank">Jesús Gómez Web Designer Freelance</a></h4>
+                <h4>Derechos de Autor - Todos los Derechos Reservados Por <a href="https://jesusgomezfreelancer.netlify.app/" target="_blank">Jesús Gómez Web Designer Freelance</a></a></h4>
        
             </div>
         </div>
@@ -451,7 +457,7 @@
         <!--BOTÓN FLOTANTE DE WHATSAPP-->
         <div id="whatsapp-icon">
             <a href="https://api.whatsapp.com/send?phone=604994694&text=¡Hola!%0A%0APodríais%20enviarnos%20más%20información%20sobre%20los%20servicios%20que%20ofrecéis%3F%0AGracias"
-            target="_blank">
+            target="_blank" aria-label="Enviar mensaje de WhatsApp">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
                 viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -465,7 +471,7 @@
         <!--BOTÓN FLOTANTE DE VOLVER A NAVEGACIÓN-->
         <div class="principalFlecha">
            <div id="flechaInicio" class="principalFlecha__imagen">
-              <a  class ="enlaceDesplazamiento" href="#vueltaInicio">
+              <a  class ="enlaceDesplazamiento" href="#vueltaInicio" aria-label="Volver al inicio">
                   <svg 
                   xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="#666666" d="M16 22L6 12L16 2l1.775 1.775L9.55 12l8.225 8.225z"/>
                  </svg>

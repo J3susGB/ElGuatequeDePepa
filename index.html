@@ -5,11 +5,7 @@
         
         <!-- basic -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- mobile metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
         <!-- site metas -->
         <title>El Guateque de Pepa: Servicio de videomatón, música y animación para bodas, eventos y cumpleaños</title>
@@ -17,10 +13,18 @@
         <meta name="description" content="El Guateque de Pepa: Servicio de videomatón, música y animación para bodas, eventos y cumpleaños. Descubre nuestra cabina hinchable iluminada con luces led, vídeos en 4K, sonido profesional y llévate tu vídeo o foto al instante.
         Ideal para bodas, despedidas, cumpleaños, comidas de empresa, comuniones y todo tipo de fiestas y eventos">
         <meta name="author" content="Jesús Gómez Beltrán">
+        <!--color de tema para barra de direcciones-->
+        <meta name="theme-color" content="#F87C56">
         <link rel="icon" href="multimedia/images/logo2.jpg" type="image/jpg"> <!--Icono de la pestaña del navegador-->
+       
+        <!-- Preload del archivo CSS minificado -->
+        <link rel="preload" href="css/style_minificado.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/style_minificado.css"></noscript>
 
-        <!-- style css -->
-        <link rel="stylesheet" href="css/style.css">
+        <!-- Enlace al archivo CSS minificado y al archivo normalize -->
+        <link rel="stylesheet" href="css/normalize_minificado.css">
+        <link rel="stylesheet" href="css/style_minificado.css">
+
         
         <!--Tipo de letra-->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
@@ -41,13 +45,16 @@
         <meta property="og:url" content="https://elguatequedepepa.com">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="El Guateque de Pepa">
-        
-        <!--cookies-->
-        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+
+        <!--Manifiesto-->
+        <link rel="manifest" href="/manifest.json">
 
         <!--Swiper para galería de fotos-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        <!--cookies-->
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 
     </head>
 
@@ -77,11 +84,11 @@
             <div id="top" class="header">
                 <div class="header__top">
                     <div class="header__top--texto">
-                        <h6 id="tel" >¿Hablamos? <a href="tel:604994694">604994694</a> | <span id="emailSpan">hola@elguatequedepepa.com</span></h6>
+                        <p id="tel" >¿Hablamos? <a href="tel:604994694">604994694</a> | <span id="emailSpan">hola@elguatequedepepa.com</span></p>
                     </div>
                     <div class="header__top--enlaces">
                     
-                            <a id="i" href="https://www.instagram.com/elguatequedepepa/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="  target="_blank">
+                            <a id="i" href="https://www.instagram.com/elguatequedepepa/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="  target="_blank" aria-label="Instagram">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
@@ -94,14 +101,14 @@
                             </svg>
                             </a>
                             
-                            <a id="f" href="https://www.facebook.com/profile.php?id=61550691195642" target="=_blank">
+                            <a id="f" href="https://www.facebook.com/profile.php?id=61550691195642" target="=_blank" aria-label="Facebook">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" viewBox="0 0 24 24" stroke-width="1.5"  fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                     <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                                 </svg>
                             </a>
                         
-                            <a id="w" href="https://api.whatsapp.com/send?phone=604994694" target="_blank">
+                            <a id="w" href="https://api.whatsapp.com/send?phone=604994694" target="_blank" aria-label="WhatsApp">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44"
                                 viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -116,7 +123,10 @@
 
                     <div class="header__main">
                         <div class="header__main--logo"> 
-                            <a href="#vueltaInicio"><img src="multimedia/images/logo.jpg" alt="logo"></a> 
+                            <a href="#"><picture>
+                                <source srcset="multimedia/images/logo_2.webp" type="image/webp">
+                                <img src="multimedia/images/logo.jpg" alt="logo" loading="lazy">
+                            </picture></a> 
                         </div>
                         <div class="header__main--navegacion">
                             <div class="menu-toggle">
@@ -142,7 +152,10 @@
         <main>
             <div id="inicio" class="contenedor__inicio">
                 <div class="contenedor__inicio--imagen">
-                    <img src="multimedia/images/portada1.jpg" alt="imagen cubo montado">
+                    <picture>
+                        <source srcset="multimedia/images/portada1_2.webp" type="image/webp">
+                        <img src="multimedia/images/portada1.jpg" alt="imagen cubo montado" loading="lazy">
+                    </picture>
                 </div>
         
                 <div class="contenedor__inicio--main">
@@ -260,7 +273,10 @@
 
             <div class="contenedor__pagina--main">
                 <figure class="pagina__main--imagen">
-                    <img src="multimedia/images/Como_funciona.jpg" alt="Personas dentro del cubo disfrazadas">
+                    <picture>
+                        <source srcset="multimedia/images/Como_funciona_2.webp" type="image/webp">
+                        <img src="multimedia/images/Como_funciona.jpg" alt="Personas dentro del cubo disfrazadas" loading="lazy">
+                    </picture>
                 </figure>
                 <section class="pagina__main--texto">
                     <h3>¡Diviértete, Baila y Deja tu Huella con El Guateque de Pepa! </h3>
@@ -352,37 +368,55 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <figure class="galeria__fotos--foto">
-                            <img src="multimedia/images/galeria1.png" alt="invitados disfrazados antes de entrar">
+                            <picture>
+                                <source srcset="multimedia/images/galeria1_2.webp" type="image/webp">
+                                <img src="multimedia/images/galeria1.png" alt="invitados disfrazados antes de entrar" loading="lazy">
+                            </picture>
                         </figure>
                     </div>
             
                     <div class="swiper-slide">
                         <figure class="galeria__fotos--foto">
-                            <img src="multimedia/images/Galeria2.jpg" alt="Cubo listo para empezar el servicio">
+                            <picture>
+                                <source srcset="multimedia/images/Galeria2_2.webp" type="image/webp">
+                                <img src="multimedia/images/Galeria2.jpg" alt="Cubo listo para empezar el servicio" loading="lazy">
+                            </picture>
                         </figure>
                     </div>
             
                     <div class="swiper-slide">
                         <figure class="galeria__fotos--foto">
-                            <img src="multimedia/images/Galeria3.jpg" alt="invitados disfrazados antes de entrar">
+                            <picture>
+                                <source srcset="multimedia/images/Galeria3_2.webp" type="image/webp">
+                                <img src="multimedia/images/Galeria3.jpg" alt="invitados disfrazados antes de entrar" loading="lazy">
+                            </picture>
                         </figure>
                     </div>
             
                     <div class="swiper-slide">
                         <figure class="galeria__fotos--foto">
-                            <img src="multimedia/images/galería4.png" alt="invitados disfrazados antes de entrar">
+                            <picture>
+                                <source srcset="multimedia/images/galería4_2.webp" type="image/webp">
+                                <img src="multimedia/images/galería4.png" alt="invitados disfrazados antes de entrar" loading="lazy">
+                            </picture>
                         </figure>
                     </div>
             
                     <div class="swiper-slide">
                         <figure class="galeria__fotos--foto">
-                            <img src="multimedia/images/galeria5.png" alt="invitados disfrazados antes de entrar">
+                            <picture>
+                                <source srcset="multimedia/images/galeria5_2.webp" type="image/webp">
+                                <img src="multimedia/images/galeria5.png" alt="invitados disfrazados antes de entrar" loading="lazy">
+                            </picture>
                         </figure>
                     </div>
             
                     <div class="swiper-slide">
                         <figure class="galeria__fotos--foto">
-                            <img src="multimedia/images/galeria6.png" alt="invitados disfrazados antes de entrar">
+                            <picture>
+                                <source srcset="multimedia/images/galeria6_2.webp" type="image/webp">
+                                <img src="multimedia/images/galeria6.png" alt="invitados disfrazados antes de entrar" loading="lazy">
+                            </picture>
                         </figure>
                     </div>
                 </div>
@@ -497,7 +531,10 @@
                         <h2>Somos<strong class="black">El Guateque de Pepa</strong></h2>
                         <div class="caja__texto">
                             <figure class="caja__texto--imagen">
-                                <img src="multimedia/images/nosotros.jpg" alt="imagen de los del Guateque">
+                                <picture>
+                                    <source srcset="multimedia/images/Nosotros_2.webp" type="image/webp">
+                                    <img src="multimedia/images/Nosotros.jpg" alt="imagen de los del Guateque" loading="lazy">
+                                </picture>
                             </figure>
 
                             <p class="caja__texto--texto">
@@ -530,42 +567,43 @@
                 </section>
             </div>
             
-            <form class="formulario" action="enviar_formulario.php" method="post">
-    <fieldset>
-        <legend>Contacta con nosotros</legend>
-
-        <div class="contenedor-campos">
-            <div style="display:none;">
-                <label>No llenar este campo:</label>
-                <input type="text" name="honeypot" value="">
-            </div>
-
-            <div class="campo nombre">
-                <label>Nombre *</label>
-                <input class="input-text" type="text" name="YourName" required placeholder="Introduce tu nombre">
-            </div>
-
-            <div class="campo telefono">
-                <label>Teléfono</label>
-                <input class="input-text" type="tel" name="Phone" pattern="[0-9]{1,9}" placeholder="Introduce tu teléfono">
-            </div>
-
-            <div class="campo correo">
-                <label>Correo *</label>
-                <input class="input-text" type="email" name="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ej: correo@correo.com">
-            </div>
-
-            <div class="campo mensaje">
-                <label>Mensaje *</label>
-                <textarea class="input-text" name="Message" required maxlength="100"></textarea>
-            </div>
-        </div> <!-- .contenedor-campos-->
-
-        <div class="alinear-derecha flex contenedor__inicio--boton">
-            <input class="enviar" type="submit" value="Enviar">
-        </div>
-    </fieldset>
-</form>
+            <form class="formulario" id="contactForm" action="enviar_formulario.php" method="post">
+                <fieldset>
+                    <legend>Contacta con nosotros</legend>
+            
+                    <div class="contenedor-campos">
+                        <div style="display:none;">
+                            <label>No llenar este campo:</label>
+                            <input type="text" name="honeypot" id="honeypot" value="">
+                        </div>
+            
+                        <div class="campo nombre">
+                            <label>Nombre *</label>
+                            <input class="input-text" type="text" id="YourName" name="YourName" required placeholder="Introduce tu nombre">
+                        </div>
+            
+                        <div class="campo telefono">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" id="Phone" name="Phone" pattern="[0-9]{9}" placeholder="Introduce tu teléfono">
+                        </div>
+            
+                        <div class="campo correo">
+                            <label>Correo *</label>
+                            <input class="input-text" type="email" id="Email" name="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ej: correo@correo.com">
+                        </div>
+            
+                        <div class="campo mensaje">
+                            <label>Mensaje *</label>
+                            <textarea class="input-text" id="Message" name="Message" required placeholder="Escribe tu mensaje"></textarea>
+                            <p id="contador-caracteres">0/250 caracteres</p>
+                        </div>
+                    </div> <!-- .contenedor-campos-->
+            
+                    <div class="alinear-derecha flex contenedor__inicio--boton">
+                        <input class="enviar" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
         </section> <!--FIN PAGINA CONTACTO-->
 
         <!--FOOTER-->
@@ -574,7 +612,7 @@
             <ul class="footer__logos">
                 <li>
                     <a href="https://www.instagram.com/elguatequedepepa/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
-                        target="_blank">
+                        target="_blank" aria-label="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg"
                         class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44"
                         viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
@@ -589,7 +627,7 @@
                 </li>
                 <li>
                     <a id="footer_facebook" href="https://www.facebook.com/profile.php?id=61550691195642"
-                        target="_blank">
+                        target="_blank" aria-label="Facebook">
                         <svg xmlns="http://www.w3.org/2000/svg"
                         class="icon icon-tabler icon-tabler-brand-facebook-filled" width="44" height="44"
                         viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
@@ -602,7 +640,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://wa.me/604994694" target="_blank">
+                    <a href="https://wa.me/604994694" target="_blank" aria-label="WhatsApp" >
                         <svg xmlns="http://www.w3.org/2000/svg"
                         class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44"
                         viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
@@ -615,7 +653,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:hola@elguatequedepepa.com?subject=Asunto%20OBLIGATORIO" target="_blank">
+                    <a href="mailto:hola@elguatequedepepa.com?subject=Asunto%20OBLIGATORIO" target="_blank" aria-label="Email">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-filled"
                         width="44" height="44" viewBox="0 0 24 24" stroke-width="2.5" stroke="#9e9e9e"
                         fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -634,11 +672,11 @@
             <div class="footer__bottom">
                 <div class="footer__bottom--texto">
                     <section class="footer__bottom--privacidad">
-                        <h4><a href="politica_privacidad.html#paginaPrivacidad" target="_blank">Privacidad</a></h4>
-                        <h4><a href="politica_privacidad.html#paginaLegal" target="_blank">Legal</a></h4>
+                        <h4><a href="politica_privacidad.html#paginaPrivacidad" target="_blank">Política de Privacidad</a></h4>
+                        <h4><a href="politica_privacidad.html#paginaLegal" target="_blank">Aviso Legal</a></h4>
                     </section>
                     <section class="footer__bottom--copy">
-                        <h4>Copyright - Todos los Derechos Reservados Por <a href="https://jesusgomezfreelancer.netlify.app/" target="_blank">Jesús Gómez Web Designer Freelance</a></h4>
+                        <h4>Derechos de Autor - Todos los Derechos Reservados Por <a href="https://jesusgomezfreelancer.netlify.app/" target="_blank">Jesús Gómez Web Designer Freelance</a></h4>
                     </section>
                 </div>
             </div>
@@ -649,7 +687,7 @@
             <!--BOTÓN FLOTANTE DE WHATSAPP-->
             <div id="whatsapp-icon">
                 <a href="https://api.whatsapp.com/send?phone=604994694&text=¡Hola!%0A%0APodríais%20enviarnos%20más%20información%20sobre%20los%20servicios%20que%20ofrecéis%3F%0AGracias"
-                target="_blank">
+                target="_blank" aria-label="Enviar mensaje de WhatsApp">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
                     viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -663,7 +701,7 @@
             <!--BOTÓN FLOTANTE DE VOLVER A NAVEGACIÓN-->
             <div class="principalFlecha">
                <div id="flechaInicio" class="principalFlecha__imagen">
-                  <a  class ="enlaceDesplazamiento" href="#vueltaInicio">
+                  <a  class ="enlaceDesplazamiento" href="#vueltaInicio" aria-label="Volver al inicio">
                       <svg 
                       xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="#666666" d="M16 22L6 12L16 2l1.775 1.775L9.55 12l8.225 8.225z"/>
                      </svg>
@@ -673,38 +711,34 @@
          </div> <!--Fin .contenedor_botones-->
 
          <!--Script-->
-         <script src="scripts/scrolling.js" defer></script>
-         <script src="scripts/responsive_scrolling.js" defer></script>
-         <script src="scripts/copiaCorreo.js" defer></script>
+         <script src="scripts/scrolling.js" async></script>
+         <script src="scripts/responsive_scrolling.js" async></script>
+         <script src="scripts/copiaCorreo.js" async></script>
          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
          <script src="scripts/swiper.js" defer></script>
-         <script src="scripts/menu.js" type="text/javascript"></script>
-         <script src="scripts/cookies.js" type="text/javascript"></script>
-         <script src="scripts/clic.w.js" type="text/javascript"></script>
+         <script src="scripts/menu.js" defer type="text/javascript"></script>
+         <script src="scripts/cookies.js" defer type="text/javascript"></script>
+         <script src="scripts/clic.w.js" async type="text/javascript"></script>
          <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
          <script src="scripts/velocidadTransacionScroll.js" defer></script>
+         <script src="scripts/formulario.js" defer></script>
 
-         <!--Mensaje agradecimiento tras envío de formulario-->
-      	 <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                // Función para obtener parámetros de la URL
-                function getParameterByName(name, url) {
-                    if (!url) url = window.location.href;
-                    name = name.replace(/[\[\]]/g, "\\$&");
-                    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-                        results = regex.exec(url);
-                    if (!results) return null;
-                    if (!results[2]) return '';
-                    return decodeURIComponent(results[2].replace(/\+/g, " "));
-                }
-  
-                // Comprobamos si el parámetro 'thankyou' está presente en la URL
-                var thankyou = getParameterByName('thankyou');
-                if (thankyou === 'true') {
-                    // Mostramos el mensaje de agradecimiento
-                    alert("Gracias por contactar con el Guateque de Pepa. Hemos recibido tu mensaje y en breve nos pondremos en contacto contigo.");
-                }
+         <!--Script de control de caracteres del formulario-->
+         <script defer>
+            document.addEventListener('DOMContentLoaded', function() {
+                var mensaje = document.getElementById('Message');
+                var contador = document.getElementById('contador-caracteres');
+        
+                mensaje.addEventListener('input', function() {
+                    var longitud = mensaje.value.length;
+                    contador.textContent = longitud + '/250 caracteres';
+                    
+                    if (longitud >= 250) {
+                        mensaje.value = mensaje.value.substring(0, 250);
+                        contador.textContent = '250/250 caracteres (máximo alcanzado)';
+                    }
+                });
             });
-            </script>
+        </script>
         </body>
 </html>

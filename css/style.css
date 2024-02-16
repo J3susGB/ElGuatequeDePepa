@@ -165,16 +165,21 @@ header {
 	align-items: center;
 	color: var(--blanco);
 	line-height: 0;
-	margin: 0 23% 0 0;
+	margin: -1% 23% 0 0;
 }
 
-.header__top--texto h6,
+.header__top--texto p,
 .header__top--texto a,
 #emailSpan {
 	text-decoration: none;
 	color: var(--blanco);
 	cursor: pointer;
 	font-size: .95rem;
+}
+
+.header__top--texto a:hover,
+#emailSpan:hover {
+	color: var(--negro);
 }
 
 .header__top--enlaces {
@@ -218,6 +223,7 @@ header {
 	display: block;
 	padding: .6rem;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .menu-responsive a:hover {
@@ -288,19 +294,21 @@ header {
 	height: 4rem;
 	margin-top: -14%;
 	position: absolute;
-	left: 3%;
+	left: 90%;
 	transform: translateX(-50%);
 	z-index: 7001;
-	align-items: center;
+	align-items: rig;
 }
 
 .menu-toggle span {
-	height: .3rem;
+	height: .2rem;
 	width: 2.5rem;
 	background-color: #FAB08E;
 	box-shadow: .1rem .1rem .1rem var(--blanco);
 	margin-bottom: 1.2rem;
 	position: absolute;
+	border-radius: 10rem;
+	align-items: right;
 }
 
 .menu-toggle span:nth-child(1) {
@@ -314,7 +322,7 @@ header {
 }
 
 .menu-toggle span:nth-child(3) {
-	bottom: 0;
+	bottom: 0rem;
 }
 
 .show-menu {
@@ -633,6 +641,7 @@ header {
 .mayuscula {
 	text-transform: uppercase;
 	display: block;
+	font-weight:bold;
 }
 
 .swiper-button-prev,
@@ -775,6 +784,11 @@ header {
 
 .campo textarea {
 	height: 13rem;
+}
+
+#contador-caracteres {
+	text-align: right;
+	font-size: 0.8rem; /* Ajusta el tamaño del texto */
 }
 
 .input-text {
@@ -967,8 +981,8 @@ p .responsive__strong {
 
 .caja__cookies {
 	position: fixed;
-	top: 9.7rem;
-	left: .8rem;
+	margin-top: 30%;
+	margin-left: 2.5%;
 	width: 95%;
 	height: 22rem;
 	background: var(--blanco);
@@ -1021,7 +1035,7 @@ p .responsive__strong {
 }
 
 .cookies__bottom button:hover {
-	background-image: linear-gradient(to right top, var(--principal) 20%, var(--blanco) 90%);
+	background-image: linear-gradient(to right top, var(--principal) 20%, #FAB08E 90%);
 	color:var(--negro)
 }
 
@@ -1038,7 +1052,7 @@ p .responsive__strong {
 @media (min-width: 390px) {
 
 	.header__top--texto {
-		margin: 0 21% 0 0;
+		margin: -1% 21% 0 0;
 	}
 
 	.galeria__fotos--foto {
@@ -1088,7 +1102,7 @@ p .responsive__strong {
 @media (min-width: 428px) {
 
 	.header__top--texto {
-		margin: 0 20% 0 0;
+		margin: -1% 20% 0 0;
 	}
 
 	.responsive-scrolling .header__main--navegacion {
@@ -1114,11 +1128,16 @@ p .responsive__strong {
 @media (min-width: 480px) {
 	
 	.header__top--texto {
-		margin: 0 18% 0 0;
+		margin: -1% 18% 0 0;
 	}
 
 	.header__main {
 		margin-top: 4.2rem;
+	}
+
+	.menu-toggle {
+		left: 91.5%;
+		
 	}
 
 	.header__main--navegacion nav a:hover {
@@ -1166,10 +1185,10 @@ p .responsive__strong {
 @media (min-width: 600px) {
 	
 	.header__top--texto {
-		margin: 0 14% 0 0;
+		margin: -.5% 14% 0 0;
 	}
 	
-	.header__top--texto h6,
+	.header__top--texto p,
 	.header__top--texto a,
 	#emailSpan {
 		font-size: 1.3rem;
@@ -1200,6 +1219,11 @@ p .responsive__strong {
 		height: 7rem;
 	} 
 
+	.menu-toggle {
+		left: 93.5%;
+		
+	}
+
 	.header__main--navegacion nav ul {
 		font-size: 1.2rem; 
 	}
@@ -1213,7 +1237,7 @@ p .responsive__strong {
 	}
 
 	.responsive-scrolling .menu-toggle {
-		margin-top: -10%;
+		margin-top: -9%;
 	}
 	
 	/*FIN MENÚ DESPLEGABLE_________________________________________________________________________________*/
@@ -1336,6 +1360,10 @@ p .responsive__strong {
 	.campo label {
 		font-size: 1.4rem;
 	}
+
+	#contador-caracteres {
+		font-size: 0.9rem; /* Ajusta el tamaño del texto */
+	}
 	
 	/*****************************************************************
 	***************************** FOOTER *****************************
@@ -1359,8 +1387,8 @@ p .responsive__strong {
 	*******************************************************************/
 	
 	.caja__cookies {
-		top: 12rem;
-		left: 1.5rem;
+		margin-top: 20%;
+		margin-left: 2.5%;
 	}
 	
 	.cookies__bottom {
@@ -1373,7 +1401,7 @@ p .responsive__strong {
 @media (min-width: 640px) {
 	
 	.header__top--texto {
-		margin: 0 13% 0 0;
+		margin: -0.5% 13% 0 0;
 	}
 
 	.header__main--navegacion {
@@ -1382,7 +1410,9 @@ p .responsive__strong {
 
 	.menu-toggle {
 		margin-top: -13%;
+		left: 94%;
 	}
+	
 
 	.header__main--navegacion nav a:hover {
 		width: 58.4rem;
@@ -1406,7 +1436,7 @@ p .responsive__strong {
 	}
 	
 	.header__top--texto {
-		margin: 0 12% 0 0;
+		margin: -.5% 12% 0 0;
 	}
 
 	.header__main {
@@ -1505,7 +1535,8 @@ p .responsive__strong {
 	*******************************************************************/
 	
 	.caja__cookies {
-		left: 1.7rem;
+		margin-top: 16.8%;
+		margin-left: 2.5%;
 	}
 }
 
@@ -1516,7 +1547,7 @@ p .responsive__strong {
 @media (min-width: 768px) {
 
 	.header__top--texto {
-		margin: 0 11% 0 0;
+		margin: -.5% 11% 0 0;
 	}
 
 	.header__main {
@@ -1525,6 +1556,7 @@ p .responsive__strong {
 
 	.menu-toggle {
 		margin-top: -9%;
+		left: 95%;
 	}
 
 	.responsive-scrolling .header__main--navegacion nav {
@@ -1532,7 +1564,7 @@ p .responsive__strong {
 	}
 
 	.responsive-scrolling .menu-toggle {
-		margin-top: -6%;
+		margin-top: -6.5%;
 	}
 
 	.header__main--navegacion nav a:hover {
@@ -1605,7 +1637,9 @@ p .responsive__strong {
 	/*******************************************************************
 	***************************** CONTACTO *****************************
 	********************************************************************/
-	
+	#contador-caracteres {
+		font-size: 1rem; /* Ajusta el tamaño del texto */
+	}
 	
 	/*****************************************************************
 	***************************** FOOTER *****************************
@@ -1629,7 +1663,8 @@ p .responsive__strong {
 	*******************************************************************/
 	
 	.caja__cookies {
-		left: 1.8rem;
+		margin-top: 16%;
+		margin-left: 2.5%;
 	}
 }
 
@@ -1663,11 +1698,16 @@ p .responsive__strong {
 	}
 
 	.header__top--texto {
-		margin: 0 10% 0 0;
+		margin: -.5% 10% 0 0;
 	}
 
 	.menu-toggle {
 		margin-top: -8%;
+		left: 95.5%;
+	}
+
+	.responsive-scrolling .menu-toggle {
+		margin-top: -6%;
 	}
 
 	.header__main--navegacion nav a:hover {
@@ -1748,8 +1788,9 @@ p .responsive__strong {
 	**************************** NOSOTROS ****************************
 	******************************************************************/
 
-	.caja__texto {
-		margin-left: 5%;
+	.caja__cookies {
+		margin-top: 14%;
+		margin-left: 0%;
 	}
 
 	/*******************************************************************
@@ -1792,7 +1833,7 @@ p .responsive__strong {
 	}
 
 	.header__top--texto {
-		margin: 0 9% 0 0;
+		margin: -.4% 9% 0 0;
 	}
 
 	.responsive-scrolling .header__main--navegacion nav {
@@ -1861,10 +1902,10 @@ p .responsive__strong {
 
 	.header__top--texto {
 		height: 5rem;
-		margin: 0.1% 8% 0 0;
+		margin: -.5% 8% 0 0;
 	}
 	
-	.header__top--texto h6,
+	.header__top--texto p,
 	.header__top--texto a,
 	#emailSpan {
 		font-size: 1.5rem;
@@ -1879,6 +1920,10 @@ p .responsive__strong {
 		width: 2rem;
 		height: 2rem;
 	}
+
+	/* .menu-responsive {
+		display: inline-block;
+	} */
 	
 	.header__main {
 		margin-top: 4.6%;
@@ -1913,7 +1958,7 @@ p .responsive__strong {
 	
 	.menu-toggle {
 		margin-top: -6%;
-		left: 1.5%;
+		left: 95.6%;
 	}
 	
 	/*FIN MENÚ DESPLEGABLE_________________________________________________________________________________*/
@@ -2176,6 +2221,10 @@ p .responsive__strong {
 		grid-row: 4; /* Cuarta fila */
 		grid-column: 1 / -1; /* Ocupa todas las columnas */
 	}
+
+	#contador-caracteres {
+		font-size: 1.1rem; /* Ajusta el tamaño del texto */
+	}
 	
 	.alinear-derecha {
 		grid-row: 5; /* Quinta fila */
@@ -2240,22 +2289,22 @@ p .responsive__strong {
 		height: 5rem;
 	}
 
-	#whatsapp-icon::before {
+	/* #whatsapp-icon::before {
 		content: '';
 		position: absolute;
 		top: -3px;
 		left: -3px;
 		right: -3px;
 		bottom: -3px;
-		border: 2px solid #10ac24; /* Ajusta el color de la línea de separación */
+		border: 2px solid #10ac24; 
 		border-radius: 50%;
 		opacity: 0;
 		transition: transform 0.3s ease;
 		width: auto;
-	}
+	} */
 	
 	#whatsapp-icon:hover {
-		transform: scale(0.95);
+		transform: scale(1.1);
 	}
 	
 	#whatsapp-icon:hover::before {
@@ -2267,8 +2316,8 @@ p .responsive__strong {
 	*******************************************************************/
 	
 	.caja__cookies {
-		top: 26%;
-		left: 2.5%;
+		margin-top: 14%;
+		margin-left: .5%;
 		height: 18rem;
 		padding: 2rem;		
 	}
@@ -2300,7 +2349,7 @@ p .responsive__strong {
 	}
 
 	.header__top--texto {
-		margin: 0 6% 0 0;
+		margin: -.3% 6% 0 0;
 	}
 	
 	.header__top--enlaces {
@@ -2309,6 +2358,7 @@ p .responsive__strong {
 
 	.menu-toggle {
 		margin-top: -5%;
+		left: 97%;
 	}
 	
 	.header__main {
@@ -2510,10 +2560,10 @@ p .responsive__strong {
 	/******************************************************************
 	***************************** COOKIES *****************************
 	*******************************************************************/
-	
+
 	.caja__cookies {
-		top: 15%;
-		left: 20%;
+		margin-top: 11%;
+		margin-left: 17.5%;
 		height: 18rem;
 		padding: 2rem;	
 		width: auto;	
@@ -2530,8 +2580,20 @@ p .responsive__strong {
 		margin: 1.3% 0 0 85%; 
 	}
 
+	.header__top--texto {
+		margin: -.25% 4.5% 0 0;
+	}
+
 	.header__main {
 		margin-top: 2.5%;
+	}
+
+	.menu-toggle {
+		margin-top: -4.5%;
+	}
+
+	.header__main--navegacion nav {
+		margin-top: 2.2%;
 	}
 
 	.responsive-scrolling .header__main--navegacion {
@@ -2549,7 +2611,7 @@ p .responsive__strong {
 	******************************************************************/
 	
 	.contenedor__inicio {
-		margin-bottom: 20%;
+		margin-bottom: 23%;
 	}
 	
 	
@@ -2638,8 +2700,8 @@ p .responsive__strong {
 	*******************************************************************/
 	
 	.caja__cookies {
-		top: 13.5rem;
-		left: 35.5rem;
+		margin-top: 12%;
+		margin-left: 22%;
 	}
 
 }
