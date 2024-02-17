@@ -85,6 +85,6 @@
 
 #### Realizo test con la aplicación Lighthouse, y el resultado es el siguiente:
 
-![Test valores Lighthouse](https://ejemplo.com/logo.png)
+![Test valores Lighthouse](https://github.com/J3susGB/ElGuatequeDePepa/infome.jpg)
 
 ### *Hecho con ❤️ por Jesús Gómez - Python Data Analist | Freelancer web Developer⚡*
