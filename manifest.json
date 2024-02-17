@@ -25,10 +25,10 @@
         "purpose": "maskable"
       }
     ],
-    "theme_color": "#F87C56",
-    "background_color": "#FFF",
+    "theme_color": "#C0C0C0",
+    "background_color": "#F87C56",
     "display": "standalone",
-    "image": "multimedia/images/logo384.jpg",
+    "image": "multimedia/images/logo512_2.png",
     "orientation": "portrait"
   }
   
