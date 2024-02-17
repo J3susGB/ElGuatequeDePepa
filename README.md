@@ -5,9 +5,15 @@
 [![LinkedId](https://img.shields.io/badge/LinkedIn-informational?style=for-the-badge&logo=linkedin&logoColor=fff&color=0274b3)](https://www.linkedin.com/in/jesusgb-dev/)
 [![Linktree](https://img.shields.io/badge/-Linktree-323330?style=for-the-badge&logo=linktree&logoColor=1de9b6)](https://linktr.ee/jesusgb?utm_source=linktree_admin_share )
 
+### **`Visita el sito:`**
+
+[![El Guateque de Pepa](https://github.com/J3susGB/ElGuatequeDePepa/blob/main/multimedia/images/logo192.jpg)](https://elguatequedepepa.com/)
+
 ### **`Información general:`**
 
 #### Se trata del proyecto de una página web que me encargó una empresa de animación de eventos, que montan una cabina hinchable, y dentro un fotomatón/videomatón.
+
+
 
   - *Estructura principal* --> Se trata de una onePage, estructurada en cinco bloques o partes, con una página extra de apoyo donde se registra toda la política de seguridad y el aviso legal de la empresa, a la que se puede acceder a través del botón -más información- del banner emergente de las cookies o pulsando los enlaces habilitados para ellos en el footer de la onePage
 
@@ -23,7 +29,7 @@
 
   - *Página Política de Privacidad y Aviso Legal* --> Página donde la empresa explica su política de privacidad, que hace con los datos personales recopilados, etc, y el manifiesto legal de todas las leyes y directivas en las que se basa para ejercer dicha recopilación de datos, uso de la web, etc.
 
-### **`Información técnica:`**`
+### **`Información técnica:`**
 
 #### La página está construida con HTML5, CSS3, PHP y JavaScript. Se trata de una página web responsive, hecha cuidadosamente teniendo en cuenta todas las franjas de tamaño de pantalla. Respetando el diseño, la página se adapta al ancho de la pantalla en la que se visualiza, lo que mejora considerablemente la experiencia visual del usuario. 
 
