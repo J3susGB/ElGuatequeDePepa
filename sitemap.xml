@@ -6,6 +6,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://www.elguatequedepepa.com/politica-de-privacidad</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://www.instagram.com/elguatequedepepa/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -20,6 +25,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    
     <!-- Añadir más URLs según vayamos creando páginas -->
 </urlset>
 

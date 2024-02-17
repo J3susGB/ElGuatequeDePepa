@@ -1,7 +1,7 @@
 {
     "name": "El Guateque de Pepa",
     "short_name": "ElGuatequeDePepa",
-    "description": "Servicio de videomatón, fotomatón, música y animación para bodas, eventos y cumpleaños",
+    "description": "Servicio de fotomatón, videomatón, música y animación para bodas, eventos y cumpleaños. Descubre nuestra cabina hinchable iluminada con luces led, vídeos, sonido profesional y llévate tu recuerdo al instante.Ideal para bodas, despedidas, cumpleaños, comidas de empresa, comuniones y todo tipo de fiestas y eventos",
     "icons": [
       {
         "src": "multimedia/images/logo192.jpg",
@@ -26,9 +26,12 @@
       }
     ],
     "theme_color": "#C0C0C0",
-    "background_color": "#F87C56",
+    "background_color": "#FFFF",
     "display": "standalone",
     "image": "multimedia/images/logo512_2.png",
-    "orientation": "portrait"
+    "orientation": "portrait",
+    "start_url": "/",
+    "lang": "es"
+    
   }
   
