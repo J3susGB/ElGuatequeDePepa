@@ -1,6 +1,6 @@
 # **`PROYECTO EL GUATEQUE DE PEPA`** 
 
-### *Jesús Gómez - Python Data Analyst | Freelancer web Developer⚡*
+### *Jesús Gómez - Python Data Analyst | Freelancer Web Developer⚡*
 [![Contact Me](https://img.shields.io/badge/Email-informational?style=for-the-badge&logo=Mail.Ru&logoColor=fff&color=c6362c)](mailto:jgomezbeltran88@gmail.com)
 [![LinkedId](https://img.shields.io/badge/LinkedIn-informational?style=for-the-badge&logo=linkedin&logoColor=fff&color=0274b3)](https://www.linkedin.com/in/jesusgb-dev/)
 [![Linktree](https://img.shields.io/badge/-Linktree-323330?style=for-the-badge&logo=linktree&logoColor=1de9b6)](https://linktr.ee/jesusgb?utm_source=linktree_admin_share )
