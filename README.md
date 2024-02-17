@@ -91,6 +91,6 @@
 
 #### Realizo test con la aplicación Lighthouse, y el resultado es el siguiente:
 
-![Test valores Lighthouse](https://github.com/J3susGB/ElGuatequeDePepa/blob/main/infome.jpg)
+![Test valores Lighthouse](https://github.com/J3susGB/ElGuatequeDePepa/blob/main/Informe.jpg)
 
 ### *Hecho con ❤️ por Jesús Gómez Freelancer Web Developer⚡*
