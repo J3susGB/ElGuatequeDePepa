@@ -5,9 +5,7 @@
 [![LinkedId](https://img.shields.io/badge/LinkedIn-informational?style=for-the-badge&logo=linkedin&logoColor=fff&color=0274b3)](https://www.linkedin.com/in/jesusgb-dev/)
 [![Linktree](https://img.shields.io/badge/-Linktree-323330?style=for-the-badge&logo=linktree&logoColor=1de9b6)](https://linktr.ee/jesusgb?utm_source=linktree_admin_share )
 
-### **`Visita el sito:`**
-
-[![El Guateque de Pepa](https://github.com/J3susGB/ElGuatequeDePepa/blob/main/multimedia/images/logo192.jpg)](https://elguatequedepepa.com/)
+### **`Visita el sitio:`** [![El Guateque de Pepa](https://github.com/J3susGB/ElGuatequeDePepa/blob/main/multimedia/images/logo192.jpg)](https://elguatequedepepa.com/)
 
 ### **`Información general:`**
 
