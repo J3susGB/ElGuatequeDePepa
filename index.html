@@ -723,20 +723,25 @@
          <script src="scripts/velocidadTransacionScroll.js" defer></script>
          <script src="scripts/formulario.js" defer></script>
 
-         <!--Script de control de caracteres del formulario-->
-         <script defer>
+        <!--Script de control de caracteres del formulario-->
+        <script defer>
             document.addEventListener('DOMContentLoaded', function() {
                 var mensaje = document.getElementById('Message');
                 var contador = document.getElementById('contador-caracteres');
-        
+
                 mensaje.addEventListener('input', function() {
                     var longitud = mensaje.value.length;
                     contador.textContent = longitud + '/250 caracteres';
-                    
+
                     if (longitud >= 250) {
                         mensaje.value = mensaje.value.substring(0, 250);
                         contador.textContent = '250/250 caracteres (máximo alcanzado)';
                     }
+                });
+
+                // Restablecer el contador de caracteres después de enviar el formulario
+                document.getElementById('contactForm').addEventListener('submit', function() {
+                    contador.textContent = '0/250 caracteres';
                 });
             });
         </script>

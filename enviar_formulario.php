@@ -5,9 +5,36 @@ $telefono = $_POST['Phone'];
 $email = $_POST['Email'];
 $mensaje = $_POST['Message'];
 
-// Validar los datos (puedes agregar más validaciones si es necesario)
-if (empty($nombre) || empty($email) || empty($mensaje)) {
-    echo "Error: A fin de poder darte el mejor servicio, necesitamos que rellenes los campos obligatorios.";
+// Validar si es un bot (campo oculto)
+if (!empty($_POST['honeypot'])) {
+    echo "Error: ¡Oops! Parece que eres un bot. No podemos procesar tu solicitud.";
+    exit;
+}
+
+// Validar el campo nombre
+if (empty($nombre)) {
+    echo "Error: El campo nombre es obligatorio.";
+    exit;
+}
+
+// Validar el campo teléfono
+if (!empty($telefono) && !preg_match('/^\d{9}$/', $telefono)) {
+    echo "Error: Teléfono no válido. Debe contener exactamente 9 números.";
+    exit;
+}
+
+// Validar el campo correo
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "Error: Email no válido. Introduce un email válido.";
+    exit;
+}
+
+// Validar el campo mensaje
+if (empty($mensaje)) {
+    echo "Error: El campo mensaje es obligatorio.";
+    exit;
+} elseif (strlen($mensaje) > 250) {
+    echo "Error: El mensaje no puede exceder los 250 caracteres.";
     exit;
 }
 

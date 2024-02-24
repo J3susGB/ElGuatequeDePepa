@@ -12,20 +12,20 @@ document.addEventListener('DOMContentLoaded', function() {
         // Validación del campo nombre
         const nombre = document.getElementById('YourName').value.trim();
         if (nombre === '') {
-            alert('Introduce un nombre.');
+            alert('El campo nombre es obligatorio.');
             return;
         }
 
         // Validación del campo teléfono
         const telefono = document.getElementById('Phone').value.trim();
         if (telefono !== '' && !/^\d{9}$/.test(telefono)) {
-            alert('Teléfono no válido. Introduce un teléfono válido.');
+            alert('Teléfono no válido. Debe contener exactamente 9 números.');
             return;
         }
 
         // Validación del campo correo
         const email = document.getElementById('Email').value.trim();
-        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+        if (!/^.+@.+\..{2,}$/.test(email)) {
             alert('Email no válido. Introduce un email válido.');
             return;
         }
@@ -33,7 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Validación del campo mensaje
         const mensaje = document.getElementById('Message').value.trim();
         if (mensaje === '') {
-            alert('Introduce un mensaje.');
+            alert('El campo mensaje es obligatorio.');
+            return;
+        } else if (mensaje.length > 250) {
+            alert('El mensaje no puede exceder los 250 caracteres.');
             return;
         }
 
@@ -56,4 +59,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
